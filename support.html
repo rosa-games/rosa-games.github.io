@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#171310">
+    <title>Aide &amp; support / Help &amp; support · 2048 RELICS</title>
+    <meta name="description" content="Aide &amp; support · Help &amp; support — 2048 RELICS">
+    <style>
+      :root { color-scheme: dark; --void: #0d0b0a; --obsidian: #171310; --obsidian-2: #1e1814; --ivory: #eee3cb; --ivory-dim: #c9bda4; --brass: #c89b4a; --brass-bright: #e4c07a; }
+      * { box-sizing: border-box; }
+      html { background: var(--void); }
+      body { margin: 0; padding: 0 1rem 3rem; background: radial-gradient(90% 40% at 50% 0, #2a2016 0, var(--obsidian) 70%) no-repeat, var(--obsidian); color: var(--ivory); font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-text-size-adjust: 100%; }
+      .top { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; max-width: 46rem; margin: 0 auto; padding: 1rem 0 0.75rem; background: rgba(23, 19, 16, 0.96); border-bottom: 1px solid rgba(200, 155, 74, 0.38); }
+      .brand { margin: 0; font: 600 1.25rem/1 Georgia, "Times New Roman", serif; letter-spacing: 0.08em; color: var(--brass-bright); }
+      .langs { display: flex; gap: 0.5rem; }
+      .langs a { display: inline-block; min-width: 44px; padding: 0.5rem 0.9rem; border: 1px solid rgba(200, 155, 74, 0.38); border-radius: 10px; color: var(--ivory-dim); text-align: center; text-decoration: none; }
+      .langs a:hover { color: var(--ivory); border-color: var(--brass); }
+      .langs a[href="#fr"] { background: var(--brass); border-color: var(--brass-bright); color: #1a130b; font-weight: 600; }
+      body:has(#en:target) .langs a[href="#fr"] { background: none; border-color: rgba(200, 155, 74, 0.38); color: var(--ivory-dim); font-weight: 400; }
+      body:has(#en:target) .langs a[href="#en"] { background: var(--brass); border-color: var(--brass-bright); color: #1a130b; font-weight: 600; }
+      main { max-width: 46rem; margin: 0 auto; }
+      .doc { display: none; padding-top: 1.5rem; scroll-margin-top: 6rem; }
+      #fr { display: block; }
+      body:has(#en:target) #fr { display: none; }
+      #en:target { display: block; }
+      h1 { margin: 0 0 0.25rem; font: 600 clamp(1.75rem, 5vw, 2.4rem)/1.15 Georgia, "Times New Roman", serif; letter-spacing: 0.02em; color: var(--brass-bright); }
+      h2 { margin: 2rem 0 0.5rem; padding-bottom: 0.35rem; border-bottom: 1px solid rgba(200, 155, 74, 0.18); font: 600 0.8125rem/1.3 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass); }
+      p, ul { margin: 0.6rem 0; }
+      ul { padding-left: 1.25rem; }
+      li { margin: 0.35rem 0; }
+      li::marker { color: var(--brass); }
+      .meta { color: var(--ivory-dim); font-size: 0.9375rem; }
+      a { color: var(--brass-bright); text-underline-offset: 0.15em; overflow-wrap: anywhere; }
+      a:hover { color: var(--ivory); }
+      a:focus-visible { outline: 2px solid var(--brass-bright); outline-offset: 2px; border-radius: 2px; }
+      .see-also { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(200, 155, 74, 0.18); }
+      @media print { html, body { background: #fff; color: #000; } h1, h2, a, .brand { color: #000; } .top, .see-also { display: none; } #en { display: block !important; } }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <p class="brand">2048 RELICS</p>
+      <nav class="langs" aria-label="Langue / Language">
+        <a href="#fr" hreflang="fr" lang="fr">Français</a>
+        <a href="#en" hreflang="en" lang="en">English</a>
+      </nav>
+    </header>
+    <main>
+    <section id="fr" class="doc" lang="fr" aria-labelledby="fr-title">
+      <h1 id="fr-title">Aide &amp; support</h1>
+      <p>Retrouvez ici les réponses aux questions les plus fréquentes. Si vous ne trouvez pas la vôtre, écrivez-nous.</p>
+      <section id="fr-how-to-play" aria-labelledby="fr-how-to-play-h">
+        <h2 id="fr-how-to-play-h">Comment jouer ?</h2>
+        <p>Glissez le doigt sur le plateau (ou utilisez les flèches, ZQSD ou WASD) pour déplacer toutes les tuiles dans une direction. Deux tuiles de même valeur fusionnent et rapportent des points ; chaque coup valide consomme une action. Enchaînez les fusions pour faire monter le combo et multiplier vos gains.</p>
+      </section>
+      <section id="fr-round-goal" aria-labelledby="fr-round-goal-h">
+        <h2 id="fr-round-goal-h">Quel est l’objectif d’une manche ?</h2>
+        <p>Chaque manche a un objectif de score, affiché en haut de l’écran : atteignez-le avant d’avoir épuisé vos actions. Vous gagnez alors des pièces (les actions qu’il vous reste comptent comme un bonus) à dépenser dans la boutique : reliques, maîtrises, relances. La manche suivante commence avec un objectif plus élevé. La run se termine quand il ne reste plus d’action ou que le plateau est bloqué.</p>
+      </section>
+      <section id="fr-relic-order" aria-labelledby="fr-relic-order-h">
+        <h2 id="fr-relic-order-h">Dans quel ordre agissent les reliques ?</h2>
+        <p>Les reliques agissent de gauche à droite, dans l’ordre de votre inventaire. Pour chaque fusion, le multiplicateur de reliques part de ×1 : un bonus en pourcentage (+X %) s’y ajoute, tandis qu’un multiplicateur (×X) le multiplie.</p>
+        <p>Placez donc les bonus en pourcentage avant les multiplicateurs : +30 % puis ×2 donne ×2,6, alors que ×2 puis +30 % ne donne que ×2,3. Faites glisser une relique vers un autre emplacement de l’inventaire pour la déplacer (au clavier : Maj + flèches).</p>
+      </section>
+      <section id="fr-mastery" aria-labelledby="fr-mastery-h">
+        <h2 id="fr-mastery-h">À quoi servent les maîtrises ?</h2>
+        <p>Chaque valeur de tuile (2, 4, 8…) possède une maîtrise, du niveau 0 au niveau 5. Chaque niveau multiplie le score des fusions qui créent cette valeur : ×1,25 au niveau 1, jusqu’à ×2,8 au niveau 5. Les niveaux s’achètent en boutique ; le détail se trouve dans Pause &gt; Maîtrises.</p>
+      </section>
+      <section id="fr-second-chance" aria-labelledby="fr-second-chance-h">
+        <h2 id="fr-second-chance-h">Qu’est-ce que la « Seconde chance » ?</h2>
+        <p>Quand votre run se termine, vous pouvez choisir de regarder une courte vidéo pour continuer : vous obtenez +5 actions si vous n’aviez plus d’actions, ou les 4 plus petites tuiles sont brisées si le plateau était bloqué.</p>
+        <p>C’est facultatif, possible une seule fois par run, uniquement dans l’application mobile, et une connexion Internet est nécessaire : sans connexion, le bouton est grisé. Si vous fermez la vidéo avant la fin, vous n’obtenez rien et l’offre reste disponible.</p>
+      </section>
+      <section id="fr-offline" aria-labelledby="fr-offline-h">
+        <h2 id="fr-offline-h">Puis-je jouer sans connexion Internet ?</h2>
+        <p>Oui. Le jeu fonctionne entièrement hors connexion ; seule la vidéo de la « Seconde chance » nécessite Internet.</p>
+      </section>
+      <section id="fr-reset-data" aria-labelledby="fr-reset-data-h">
+        <h2 id="fr-reset-data-h">Comment effacer mes données ?</h2>
+        <p>Ouvrez Réglages &gt; « Réinitialiser les données », puis confirmez : la collection, les déblocages, les records, les statistiques, les réglages et la run en cours sont effacés de l’appareil. Désinstaller l’application les efface aussi. C’est définitif : nous n’avons aucune copie de vos données.</p>
+      </section>
+      <section id="fr-ad-consent" aria-labelledby="fr-ad-consent-h">
+        <h2 id="fr-ad-consent-h">Comment gérer mon consentement publicitaire ?</h2>
+        <p>Dans l’application mobile, ouvrez Réglages &gt; « Gérer le consentement publicitaire » pour rouvrir le formulaire de consentement de Google et modifier votre choix. Sur iOS, vous pouvez aussi gérer l’autorisation de suivi dans les réglages de l’appareil. Cette option n’apparaît pas dans la version web, qui n’affiche aucune publicité.</p>
+      </section>
+      <section id="fr-language" aria-labelledby="fr-language-h">
+        <h2 id="fr-language-h">Comment changer la langue ?</h2>
+        <p>Ouvrez Réglages &gt; Langue et choisissez Automatique (langue de l’appareil), Français ou English. Le jeu se recharge pour appliquer le changement ; votre progression est conservée et une run en cours se reprend avec « Continuer ».</p>
+      </section>
+      <section id="fr-seed" aria-labelledby="fr-seed-h">
+        <h2 id="fr-seed-h">Qu’est-ce que la graine d’une run ?</h2>
+        <p>La graine est le code affiché dans Pause (bouton Copier) et sur l’écran de fin de run, par exemple K7QF-M2XA. Elle détermine tout le hasard de la run : apparition des tuiles, boutiques et reliques proposées. Deux runs lancées avec la même graine et jouées de la même façon se déroulent à l’identique. Vous pouvez la copier pour la partager ou la joindre à un message au support.</p>
+      </section>
+      <section id="fr-contact" aria-labelledby="fr-contact-h">
+        <h2 id="fr-contact-h">Nous contacter</h2>
+        <p>Une question, un problème ou une suggestion ? Écrivez-nous à <a href="mailto:Contact@amarouche.fr">Contact@amarouche.fr</a>. Indiquez votre appareil, la version du jeu (ci-dessous) et, si possible, la graine de la run concernée.</p>
+      </section>
+      <section id="fr-version" aria-labelledby="fr-version-h">
+        <h2 id="fr-version-h">Version de l’application</h2>
+        <p>2048 RELICS, version 0.1.0.</p>
+      </section>
+      <p class="see-also"><a href="privacy.html#fr">Politique de confidentialité</a></p>
+    </section>
+    <section id="en" class="doc" lang="en" aria-labelledby="en-title">
+      <h1 id="en-title">Help &amp; support</h1>
+      <p>Here are the answers to the most frequently asked questions. If you do not find yours, write to us.</p>
+      <section id="en-how-to-play" aria-labelledby="en-how-to-play-h">
+        <h2 id="en-how-to-play-h">How do I play?</h2>
+        <p>Swipe on the board (or use the arrow keys, ZQSD or WASD) to move all the tiles in one direction. Two tiles of the same value merge and score points; every valid move uses one action. Chain merges to raise the combo and multiply your gains.</p>
+      </section>
+      <section id="en-round-goal" aria-labelledby="en-round-goal-h">
+        <h2 id="en-round-goal-h">What is the goal of a round?</h2>
+        <p>Each round has a score goal, shown at the top of the screen: reach it before you run out of actions. You then earn coins (the actions you have left count as a bonus) to spend in the shop: relics, masteries, rerolls. The next round starts with a higher goal. The run ends when no action is left or the board is blocked.</p>
+      </section>
+      <section id="en-relic-order" aria-labelledby="en-relic-order-h">
+        <h2 id="en-relic-order-h">In which order do relics act?</h2>
+        <p>Relics act from left to right, in the order of your inventory. For each merge, the relic multiplier starts at ×1: a percentage bonus (+X%) is added to it, while a multiplier (×X) multiplies it.</p>
+        <p>So put percentage bonuses before multipliers: +30% then ×2 gives ×2.6, whereas ×2 then +30% only gives ×2.3. Drag a relic to another inventory slot to move it (on a keyboard: Shift + arrow keys).</p>
+      </section>
+      <section id="en-mastery" aria-labelledby="en-mastery-h">
+        <h2 id="en-mastery-h">What are masteries for?</h2>
+        <p>Each tile value (2, 4, 8…) has a mastery, from level 0 to level 5. Each level multiplies the score of the merges that create this value: ×1.25 at level 1, up to ×2.8 at level 5. Levels are bought in the shop; the details are in Pause &gt; Masteries.</p>
+      </section>
+      <section id="en-second-chance" aria-labelledby="en-second-chance-h">
+        <h2 id="en-second-chance-h">What is the “Second chance”?</h2>
+        <p>When your run ends, you can choose to watch a short video to keep going: you get +5 actions if you were out of actions, or the 4 lowest tiles are broken if the board was blocked.</p>
+        <p>It is optional, available once per run, in the mobile app only, and it needs an Internet connection: without one, the button is greyed out. If you close the video before the end, you get nothing and the offer stays available.</p>
+      </section>
+      <section id="en-offline" aria-labelledby="en-offline-h">
+        <h2 id="en-offline-h">Can I play without an Internet connection?</h2>
+        <p>Yes. The game works entirely offline; only the “Second chance” video needs the Internet.</p>
+      </section>
+      <section id="en-reset-data" aria-labelledby="en-reset-data-h">
+        <h2 id="en-reset-data-h">How do I erase my data?</h2>
+        <p>Open Settings &gt; “Reset data”, then confirm: your collection, unlocks, records, statistics, settings and the current run are erased from the device. Uninstalling the app erases them too. This is final: we have no copy of your data.</p>
+      </section>
+      <section id="en-ad-consent" aria-labelledby="en-ad-consent-h">
+        <h2 id="en-ad-consent-h">How do I manage my ad consent?</h2>
+        <p>In the mobile app, open Settings &gt; “Manage ad consent” to reopen Google’s consent form and change your choice. On iOS, you can also manage the tracking permission in the device settings. This option does not appear in the web version, which shows no ads.</p>
+      </section>
+      <section id="en-language" aria-labelledby="en-language-h">
+        <h2 id="en-language-h">How do I change the language?</h2>
+        <p>Open Settings &gt; Language and choose Automatic (device language), Français or English. The game reloads to apply the change; your progress is kept and a run in progress can be resumed with “Continue”.</p>
+      </section>
+      <section id="en-seed" aria-labelledby="en-seed-h">
+        <h2 id="en-seed-h">What is a run’s seed?</h2>
+        <p>The seed is the code shown in Pause (Copy button) and on the end-of-run screen, for example K7QF-M2XA. It determines all the randomness of the run: tile spawns, shops and the relics on offer. Two runs started with the same seed and played the same way unfold identically. You can copy it to share it or attach it to a message to support.</p>
+      </section>
+      <section id="en-contact" aria-labelledby="en-contact-h">
+        <h2 id="en-contact-h">Contact us</h2>
+        <p>A question, a problem or a suggestion? Write to us at <a href="mailto:Contact@amarouche.fr">Contact@amarouche.fr</a>. Please tell us your device, the game version (below) and, if possible, the seed of the run concerned.</p>
+      </section>
+      <section id="en-version" aria-labelledby="en-version-h">
+        <h2 id="en-version-h">App version</h2>
+        <p>2048 RELICS, version 0.1.0.</p>
+      </section>
+      <p class="see-also"><a href="privacy.html#en">Privacy policy</a></p>
+    </section>
+    </main>
+    <script>
+      // Opens the English version when the browser language is not French (no hash given).
+      if (!location.hash && !/^fr/i.test(navigator.language || "")) location.replace("#en");
+    </script>
+  </body>
+</html>
